@@ -18,10 +18,10 @@ int main(void)
 	long long lli;
 	float f;
 
-	printf("Size of a char: %ld byte(s)\n", sizeof(c));
-	printf("Size of a char: %ld byte(s)\n", sizeof(i));
-	printf("Size of a char: %ld byte(s)\n", sizeof(li));
-	printf("Size of a char: %ld byte(s)\n", sizeof(lli));
-	printf("Size of a char: %ld byte(s)\n", sizeof(f));
+	printf("Size of a char: 1 byte(s)\n", sizeof(c));
+	printf("Size of a char: 4 byte(s)\n", sizeof(i));
+	printf("Size of a char: 8 byte(s)\n", sizeof(li));
+	printf("Size of a char: 8 byte(s)\n", sizeof(lli));
+	printf("Size of a char: 4 byte(s)\n", sizeof(f));
 	return (0);
 }
