@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: "and that piece of a art is useful"
+ * Description: 'and that piece of a art is useful" -Dora Korpar, 2015- 1o- 19'
  *
  * Return: Always 0 (Success)
  */
