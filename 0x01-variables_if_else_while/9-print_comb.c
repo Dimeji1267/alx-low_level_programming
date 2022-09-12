@@ -1,19 +1,15 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
- * main - printing numbers from 0-9 with commas and space between them
+ * main - Entry point
  *
- * Description: using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
 
-	for (i = '0' ; i <= '9' ; i++)
+	for (i = '0'; i <= '9'; i++)
 {
 	putchar(i);
 
