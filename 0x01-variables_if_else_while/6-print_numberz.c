@@ -1,20 +1,21 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - print if the number is positive, zero, or negative
  *
  * Description: using the main function
  * this program prints "Programming is positive, zero, or negative"
- * Return 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int n;
+	int a;
 
-	for (n = '0'; n <= '9'; n++)
+	for (a = 0; a < 10; a++)
 {
-	putchar(n);
+	putchar(a + '0');
 }
 	putchar('\n');
 	return (0);
