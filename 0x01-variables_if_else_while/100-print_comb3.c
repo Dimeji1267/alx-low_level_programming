@@ -3,8 +3,9 @@
 
 /**
  * main - Entry point
- * Description: prints two digits combination
  *
+ * Description: using the main function
+ * this program prints two digits combination
  * Return: Always 0 (Success)
  */
 
