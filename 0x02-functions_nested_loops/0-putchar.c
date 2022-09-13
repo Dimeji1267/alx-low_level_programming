@@ -1,14 +1,17 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - print putchar
+ * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: The program to print putchar
+ *
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	putchar(');
+	putchar(' ');
 	putchar('p');
 	putchar('u');
 	putchar('t');
@@ -18,5 +21,5 @@ int main(void)
 	putchar('r');
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
