@@ -1,26 +1,28 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * print_diagonal - Print
- * @n: Value
+ * print_diagonal - prints a diagonal
+ * @n: parameter
+ * Return: returns nothing
  */
+
 void print_diagonal(int n)
 {
-	int i;
-	int j;
+	int len, space;
 
-	if (i > 0)
+	if (n > 0)
 	{
-		for (i = 0; j < n; i++)
+		for (len = 0; len < n; len++)
 		{
-			for (j = 0; j < i; j++)
+			for (space = 0; space < len; space++)
 			{
 				putchar(' ');
 			}
 
 			putchar('\\');
 
-			if (i == (n - 1))
+			if (len == (n - 1))
 			{
 				continue;
 			}
@@ -29,4 +31,3 @@ void print_diagonal(int n)
 	}
 	putchar('\n');
 }
-
