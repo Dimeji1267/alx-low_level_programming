@@ -9,4 +9,6 @@
 void _puts(char *str)
 {
 	printf("%d\n", *str);
+
+	return (0);
 }
