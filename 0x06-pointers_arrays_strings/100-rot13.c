@@ -6,20 +6,18 @@
  */
 char *rot13(char *s)
 {
-	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMoOpPqQrRsStTuUvVwWxXyYzZ";
-	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEgGhHiIjJkKlLmM";
+	int i, j;
+	char a[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMoOpPqQrRsStTuUvVwWxXyYzZ";
+	char b[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEgGhHiIjJkKlLmM";
 
-	int i;
-	int j = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
 
-		for (j = 0; part1[j] != '\0'; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == part1[j])
+			if (a[j] == *(s + i))
 			{
-				s[i] = part2[j];
+				*(s + i) = b[j];
 				break;
 			}
 		}
