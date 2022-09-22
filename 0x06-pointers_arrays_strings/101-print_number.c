@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_number - prints number
  * @n: integer to convert to character
@@ -7,7 +8,7 @@ void print_number(int n)
 {
 	unsigned int abs;
 	int mult = 1;
-	unsigned int abScount;
+	unsigned int abSCount;
 	int i;
 	int c = 0;
 
@@ -23,11 +24,11 @@ void print_number(int n)
 		n++;
 	}
 	abs = n;
-	abScount = n;
+	abSCount = n;
 
-	while (abScount > 0)
+	while (abSCount > 0)
 	{
-		abScount /= 10;
+		abSCount /= 10;
 		c++;
 	}
 	for (i = 0; i < c - 1; i++)
