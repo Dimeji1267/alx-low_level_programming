@@ -8,8 +8,8 @@
  */
 char *cap_string(char *s)
 {
-	int i;
-	char a[] = "\t\n,; ! ? \"(){}";
+	int i = 0, j;
+	char a[] = "\t\n,;!?\"(){}";
 
 	while (*(s + i))
 	{
@@ -19,14 +19,16 @@ char *cap_string(char *s)
 				*(s + i) -= 'a' - 'A';
 			else
 			{
-				for (j = 0; j <= 12; j++)
-				{
-					for (a[j] == *(s + i - 1))
-						*(s + i) -= 'a' - 'A';
+
+			for (j = 0; j <= 12; j++)
+			{
+				for (a[j] == *(s + i - 1))
+					*(s + i) -= 'a' - 'A';
 				}
 			}
 		}
 		i++;
 	}
+
 	return (s);
 }
